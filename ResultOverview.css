@@ -1,0 +1,42 @@
+.result-overview {
+    padding: 0 20px;
+    width: 70%;
+    font-size: calc(12px + 0.5vw);
+  }
+
+  .result-overview h1 {
+    font-size: 2rem; /* 2 times the base font size */
+    font-weight: bold; /* Adjust font weight */
+  }
+
+  .student-progress {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .passport-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  .progress-details {
+    flex-grow: 1;
+  }
+  
+  .results {
+    margin-top: 20px;
+  }
+  
+  .results h2 {
+    margin-bottom: 10px;
+  }
+  
+  .results p {
+    margin: 0;
+  }
+
+
+  

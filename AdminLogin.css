@@ -1,0 +1,95 @@
+body {
+    background-color: #f7f5d1; /* Adjust color to match your design */
+  }
+  
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(80vh - 120px); /* Adjust height to fit between navbar and footer */
+    padding: 0; /* Add padding for mobile view */
+  }
+  
+  .login-form {
+    background-color: white;
+    padding: 0 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+    max-width: 400px; /* Adjusted width */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    position: relative;
+    left: 6px;
+    font-weight: 600;
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+  }
+  .CTA2{
+    border-left:solid 2px #bb2233;
+    }
+  input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+   
+  }
+  
+  button {
+    width: 95%;
+    padding: 10px;
+    background-color: #bb2233;
+    color: white;
+    border: none;
+    border-radius: 3%;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: rgb(136, 21, 34);
+  }
+  
+  .links {
+    margin-top: 10px;
+  }
+  
+  .links a {
+    display: block;
+    margin-bottom: 5px;
+    color: #191919;
+    text-decoration: none;
+  }
+  
+  .links a:hover {
+    text-decoration: underline;
+    color: #bb2233;
+  }
+
+  .error {
+    color: red;
+    margin-bottom: 10px;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .login-container {
+      height: calc(80vh - 120px); /* Adjust height to fit between navbar and footer */
+    }
+  
+    .login-form {
+      max-width: 100%; /* Full width on mobile */
+      margin: 0 10px; /* Add margin for mobile view */
+    }
+  }
+  
