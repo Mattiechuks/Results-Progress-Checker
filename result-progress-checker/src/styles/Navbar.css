@@ -1,0 +1,133 @@
+.navbar-container {
+  width: 88.1%;
+  margin: auto;
+}
+
+.navbar {
+  background-color: #191919;
+  padding: 10px;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+ }
+
+.navbar ul li a:hover {
+  transform: scale(1.1);
+  background-color: #f9f3d9;
+  color: #191919;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+.navbar .CTA a {
+  background-color: #f9f3d9;
+  color: #191919;
+}
+
+
+.logo-image {
+  width: 250px;
+}
+.navbar .menu-toggle {
+  display: none;
+}
+
+.login-page .navbar-container {
+  max-width: 342px; /* Fixed width for login pages */
+  
+  ul{
+    display: none;
+  }
+  .logo-image{
+    position: relative;
+    left: 19%;
+    width: 210px;
+  }
+
+  .navbar .menu-toggle {
+    display: none;
+  }
+  .navbar ul {
+    display: none;
+  }
+  
+  
+}
+
+@media (max-width: 768px) {
+  .navbar-container {
+    position: relative;
+    width: 88.1%;
+    margin: auto;
+    z-index: 2;
+  }
+
+  .navbar ul {
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    top: 94px;
+    right: 10px;
+    background-color: #191919;
+    border-radius: 3px;
+    width: 88%;
+    display: none;
+  }
+
+  .navbar ul li {
+    padding: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar ul li a {
+   text-decoration: none;
+   color: white;
+  }
+
+  .navbar .CTA {
+    background-color: #f9f3d9;
+    color: #191919;
+    padding: 5px 10px;
+    border-radius: 3px;
+  }
+
+  .navbar .CTA a {
+    color: #191919;
+  }
+  .navbar ul.show {
+    display: flex;
+  }
+
+  .navbar .menu-toggle {
+    display: block;
+    color: #f9f3d9;
+    font-size: 1.3em;
+    cursor: pointer;
+  }
+
+  .logo-image {
+    width: 250px;
+  }
+}
