@@ -1,12 +1,14 @@
-import React, { useState } from 'react';
-import './Login.css';
+"use client";
 
-const Login = () => {
+import React, { useState } from 'react';
+import styles from '../../styles/Login.module.css';
+
+const Login: React.FC = () => {
   const [matricNumber, setMatricNumber] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (matricNumber === '' || password === '') {
       setError('Please fill in all fields');
@@ -19,14 +21,14 @@ const Login = () => {
   };
 
   return (
-    <div className="login-container">
-      <div className="login-form">
+    <div className={styles.loginContainer}>
+      <div className={styles.loginForm}>
         <h2>Student Login - PTI Progress and Result Checker</h2>
-        {error && <p className="error">{error}</p>}
+        {error && <p className={styles.error}>{error}</p>}
         <form onSubmit={handleSubmit}>
           <label htmlFor="matriculation-number">Matriculation Number:</label>
           <input
-            className="CTA2"
+            className={styles.input}
             type="text"
             id="matriculation-number"
             name="matriculation-number"
@@ -37,6 +39,7 @@ const Login = () => {
 
           <label htmlFor="password">Password:</label>
           <input
+            className={styles.input}
             type="password"
             id="password"
             name="password"
@@ -45,11 +48,10 @@ const Login = () => {
             required
           />
 
-          <button type="submit">Log In</button>
+          <button type="submit" className={styles.button}>Log In</button>
         </form>
-        <div className="links">
-            <a href="/">Home</a>
-            <a href="/forgot-password">Forgotten Password?</a>
+        <div className={styles.links}>
+          <a href="/forgot-password">Forgotten Password?</a>
         </div>
       </div>
     </div>

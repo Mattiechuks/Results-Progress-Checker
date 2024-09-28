@@ -1,8 +1,10 @@
+"use client";
 import React, { useEffect, useState } from 'react';
-import './Footer.css';
-import logoImage2 from '/progresslogo2.jpg';
+import styles from '../../styles/Footer.module.css';
+import Image from 'next/image';
+import logoImage2 from '../../public/images/progresslogo2.jpg';
 
-const Footer = () => {
+const Footer: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -22,10 +24,10 @@ const Footer = () => {
   }, []);
 
   return (
-    <div className="footer-container">
-      <footer className={`footer ${isVisible ? 'visible' : 'hidden'}`}>
-        <img src={logoImage2} alt="Logo" className="logo-image2" />
-        <p>© 2024 THE DEPARTMENT OF COMPUTER SCIENCE AND INFORMATION TECHNOLOGY IN PARTIALFULFILLMENT OF THE REQUIREMENTS FOR THE AWARD OF NATIONAL DIPLOMA IN COMPUTERSCIENCE AND INFORMATION TECHNOLOGY PETROLEUM TRAINING INSTITUTE EFFURUN,DELTA STATE.JANUARY. ALL RIGHTS RESERVED.</p>
+    <div className={styles.footerContainer}>
+      <footer className={`${styles.footer} ${isVisible ? styles.visible : styles.hidden}`}>
+        <Image src={logoImage2} alt="Logo" className={styles.logoImage2} />
+        <p>© 2024 THE DEPARTMENT OF COMPUTER SCIENCE AND INFORMATION TECHNOLOGY IN PARTIAL FULFILLMENT OF THE REQUIREMENTS FOR THE AWARD OF NATIONAL DIPLOMA IN COMPUTER SCIENCE AND INFORMATION TECHNOLOGY PETROLEUM TRAINING INSTITUTE EFFURUN, DELTA STATE. JANUARY. ALL RIGHTS RESERVED.</p>
       </footer>
     </div>
   );
