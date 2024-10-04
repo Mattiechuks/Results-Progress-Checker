@@ -1,7 +1,7 @@
 // app/layout.tsx
 import React from "react";
-import Header from "../components/Navbar";
-import Footer from "../components/Footer";
+import Header from "./navbar/page";
+import Footer from "./footer/page";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {

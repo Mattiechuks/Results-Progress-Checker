@@ -1,0 +1,58 @@
+.studentDashboardContainer {
+  position: relative;
+  display: flex;
+  background-color: white;
+  width: 88.1%;
+  max-width: 1182px;
+  margin: auto;
+  padding: 0;
+}
+
+.studentSidebar {
+  display: block;
+  width: 140px;
+  background-color: #191919;
+  color: white;
+  padding: 20px;
+}
+
+.studentSidebar h2 {
+  margin-top: 0;
+}
+
+.studentSidebar ul {
+  display: block;
+  width: 200px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.studentSidebar ul li {
+  position: relative;
+  bottom: 30px;
+  margin: 10px 0;
+  font-weight: 600;
+  padding-top: 40px;
+}
+
+.studentSidebar ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.studentSidebar ul li a:hover {
+  position: relative;
+  left: 35px;
+  display: block;
+  transform: scale(1.2);
+  background-color: white;
+  color: #191919;
+  border-radius: 15px;
+  padding: 0 5px;
+  width: 120px;
+}
+
+.studentDashboardContent {
+  flex-grow: 1;
+  width: 70%;
+}

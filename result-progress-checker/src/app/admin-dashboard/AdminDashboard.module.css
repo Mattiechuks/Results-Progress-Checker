@@ -1,0 +1,79 @@
+.adminDashboardContainer {
+  position: relative;
+  right: 85px;
+  background-color: white;
+  display: flex;
+  width: 88.1%;
+  max-width: 1182px;
+  margin: auto;
+  margin-top: 95px;
+}
+
+.adminSidebar {
+  display: block;
+  width: 210px;
+  background-color: #191919;
+  color: white;
+  padding: 20px;
+}
+
+.adminSidebar h2 {
+  margin-top: 0;
+}
+
+.adminSidebar ul {
+  display: block;
+  width: 200px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.adminSidebar ul li {
+  position: relative;
+  bottom: 30px;
+  margin: 10px 0;
+  font-weight: 600;
+  padding-top: 40px;
+  text-align: center;
+}
+
+.adminSidebar ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.adminSidebar ul li a:hover {
+  position: relative;
+  left: 35px;
+  display: block;
+  transform: scale(1.2);
+  background-color: white;
+  color: #191919;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+.adminDashboardContent {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .adminDashboardContainer {
+    position: relative;
+    margin-top: 100px;
+    right: 60px;
+    width: 82%;
+    min-width: 79.8%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .adminDashboardContainer {
+    position: relative;
+    width: 79%;
+    min-width: 79.8%;
+    margin: auto;
+  }
+}

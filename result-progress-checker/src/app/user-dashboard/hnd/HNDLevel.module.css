@@ -1,0 +1,57 @@
+.hndLevel {
+  padding: 20px;
+}
+
+.sessions {
+  display: flex;
+  flex-direction: column;
+}
+
+.session {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.semester {
+  position: relative;
+  right: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.semester.completed {
+  background-color: #d4edda;
+}
+
+.semester.in-progress {
+  background-color: #fff3cd;
+}
+
+.semester.locked {
+  background-color: #f8d7da;
+}
+
+.buttons {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+button {
+  margin-top: 5px;
+  margin-right: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  background-color: #bb2233;
+  color: white;
+  cursor: pointer;
+  width: 35%;
+}
+
+button:hover {
+  background-color: #7a1521;
+}
