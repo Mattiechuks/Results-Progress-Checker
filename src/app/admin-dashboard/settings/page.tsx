@@ -83,17 +83,3 @@ const SectionTitle = styled.h2`
   font-size: 20px;
   color: #2c3e50;
 `;
-
-const PlaceholderText = styled.p`
-  color: #191919;
-`;
-const UploadButton = styled.button`
-  padding: 12px 24px;
-  background-color: #0070f3;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-  margin-top: 20px;
-`;

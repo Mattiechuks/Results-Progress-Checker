@@ -33,7 +33,7 @@ const Banner: React.FC = () => {
         <div className={styles.bannerContent}>
           <div className={styles.bannerText}>
             <h1>Access Your Academic <br /> Records <span>With Ease</span></h1>
-            <p>Effortlessly Access and Ease into Academic Achievement at Our Prestigious Institution's Secure Result Portal</p>
+            <p>Effortlessly Access and Ease into Academic Achievement at Our Prestigious Institutions Secure Result Portal</p>
             <button onClick={handleLoginClick}>Login</button>
             <button onClick={handleAdminClick}>Admin Login</button>
             <button onClick={handleStudentDashboardClick}>Student Dashboard</button>
