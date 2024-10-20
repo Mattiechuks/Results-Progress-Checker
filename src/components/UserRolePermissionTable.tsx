@@ -4,9 +4,16 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Table = styled.table`
-  width: 100%;
+  width: 75%;
   border-collapse: collapse;
   margin-bottom: 1rem;
+
+
+  @media (max-width: 768px) {
+   width: 40%;
+  }
+
+  
 `;
 
 const Th = styled.th`
@@ -15,6 +22,15 @@ const Th = styled.th`
   padding: 0.75rem;
   text-align: left;
   border-bottom: 1px solid #444;
+
+  @media (max-width: 768px) {
+   font-size:0.7em;
+  }
+
+  @media (max-width: 600px) {
+    font-size:0.7em;
+  
+  }
 `;
 
 const Td = styled.td`
@@ -22,6 +38,16 @@ const Td = styled.td`
   color: #fff;
   padding: 0.75rem;
   border-bottom: 1px solid #444;
+
+  @media (max-width: 768px) {
+   font-size:0.7em;
+  }
+
+  @media (max-width: 600px) {
+    font-size:0.6em;
+  
+  }
+  
 `;
 
 const ActionButton = styled.button`

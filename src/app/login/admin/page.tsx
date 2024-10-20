@@ -48,10 +48,6 @@ const AdminLogin: React.FC = () => {
 
           <button type="submit">Log In</button>
         </form>
-        <div className={styles.links}>
-          <a href="/">Home</a>
-          <a href="/forgot-password">Forgotten Password?</a>
-        </div>
       </div>
     </div>
   );

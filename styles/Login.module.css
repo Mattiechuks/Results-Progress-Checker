@@ -1,18 +1,19 @@
 .loginContainer {
+  margin-top: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background-color: rgba(255, 255, 255, 0.9);
+  padding: 0;
 }
 
 .loginForm {
-  background-color: white;
-  padding: 20px;
+  background-color: rgb(243, 234, 234);
+  padding: 0 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.603);
   text-align: center;
-  width: 100%;
+  width: 300px;
+  height: 400px;
   max-width: 400px;
   display: flex;
   flex-direction: column;
@@ -24,35 +25,36 @@
 }
 
 .loginForm label {
-  display: flex;
-  font-weight: 500;
+  display: block;
+  left: 6px;
+  font-weight: 600;
   position: relative;
+  text-align: left;
   margin-bottom: 5px;
 }
 
 .input {
-  position: relative;
-  right: 3px;
-  width: 93.3%;
+  width: 90%;
   padding: 10px;
   margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  z-index: 0;
+  border: none;
+  border-bottom: 1px solid #ccc;
+
 }
 
 .button {
-  width: 100%;
+  width: 95%;
+  height: 50px;
   padding: 10px;
   background-color: #bb2233;
   color: white;
   border: none;
-  border-radius: 4px;
+  border-radius: 3%;
   cursor: pointer;
 }
 
 .button:hover {
-  background-color: #7a1521;
+  background-color: rgb(136, 21, 34);
 }
 
 .links {
@@ -74,5 +76,15 @@
 .error {
   color: red;
   margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+  .loginContainer {
+    height: calc(80vh - 120px); /* Adjust height to fit between navbar and footer */
+  }
+
+  .loginForm {
+    max-width: 100%; /* Full width on mobile */
+    margin: 0 10px; /* Add margin for mobile view */
+  }
 }
 

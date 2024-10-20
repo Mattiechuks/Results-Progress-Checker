@@ -11,11 +11,11 @@ interface SidebarProps {
 
 const SidebarContainer = styled.div<{ isOpen: boolean }>`
   width: 200px;
-  height: 100vh;
+  height: 100%;
   background-color: #191919;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
   align-items: center;
   padding: 20px;
   padding-top: 150px;

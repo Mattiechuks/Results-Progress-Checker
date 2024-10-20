@@ -3,18 +3,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: calc(80vh - 120px); /* Adjust height to fit between navbar and footer */
   padding: 0; /* Add padding for mobile view */
 }
 
 .loginForm {
-  background-color: white;
+  background-color: rgb(243, 234, 234);
   padding: 0 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.39);
   text-align: center;
   width: 300px;
   max-width: 400px; /* Adjusted width */
   display: flex;
+  height: 450px;
   flex-direction: column;
   justify-content: center;
 }
@@ -40,12 +40,12 @@
   width: 90%;
   padding: 10px;
   margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
+  border: none;
+  border-bottom: 1px solid #ccc;}
 
 .loginForm button {
   width: 95%;
+  height: 30%;
   padding: 10px;
   background-color: #bb2233;
   color: white;

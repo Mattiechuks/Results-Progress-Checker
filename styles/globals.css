@@ -22,7 +22,7 @@ body {
 
 .app-container {
   max-width: 1180px;
-  margin: 0 auto;
+  margin: 0;
   padding: 2rem;
   text-align: center;
 }

@@ -14,8 +14,11 @@ const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     <html lang="en">
       <body className="antialiased">
         <Header />
-        <main>{children}</main>
+        <main>
+          {children}
+        </main>
         <Footer />
+        
       </body>
     </html>
   );

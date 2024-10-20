@@ -1,13 +1,9 @@
 .footerContainer {
-  position: relative;
-  width: 98.2vw;
+  position: fixed;
+  width: 99vw;
   margin: 0;
   padding: 0;
   background-color: #191919;
-  bottom: -10px;
-  @media (min-width: 768px) {
-    width: 98.2vw;
-  }
 }
 
 .footer {
@@ -16,25 +12,19 @@
   text-align: center;
   padding-bottom: 20px;
   border-top: 1px solid #191919;
-  font-size: 0.8rem;
-  transition: transform 0.3s ease-in-out;
 }
 
 .logoImage2 {
-  width: 30%;
-  height: 30%;
+  width: 120px;
   margin-bottom: 10px;
 }
 
-.footer.hidden {
-  transform: translateY(100%);
-}
-
-.footer.visible {
-  transform: translateY(0);
-}
 
 @media (max-width: 768px) {
+  .footerContainer {
+    width: 100vw;
+  
+}
   .footer {
     padding-bottom: 10px;
   }

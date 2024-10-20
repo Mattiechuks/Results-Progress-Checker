@@ -20,7 +20,7 @@ const Banner: React.FC = () => {
     router.push('/admin-dashboard');
   };
   const handleAdminClick = () => {
-    router.push('/admin-login');
+    router.push('/login/admin');
   };
 
   const handleContactClick = () => {

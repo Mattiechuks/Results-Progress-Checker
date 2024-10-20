@@ -21,9 +21,7 @@ const Navbar: React.FC = () => {
                 </div>
                 <ul className={menuOpen ? styles.show : "X"}>
                     <li><Link href="/">Home</Link></li>
-                    <li><Link href="/about">About</Link></li>
-                    <li><Link href="/blog">Blog</Link></li>
-                    <li className={styles.CTA}><Link href="/contact">Contact</Link></li>
+                    <li className={styles.CTA}><Link href="/about">About</Link></li>
                 </ul>
             </nav>
         </div>
